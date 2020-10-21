@@ -1,0 +1,86 @@
+/* Setting grid areas for items on INDEX PAGE */
+.navHome {
+    grid-area: navHome;
+}
+
+.navThoughts {
+    grid-area: navThoughts;
+}
+
+.navAlbums {
+    grid-area: navAlbums;
+}
+
+.navOther {
+    grid-area: navOther;
+}
+
+@font-face {
+    font-face-name: PermanentMarker;
+    font-family: PermanentMarker;
+    src: url(./fonts/PermanentMarker-Regular.ttf);
+}
+
+@font-face {
+    font-face-name: SedgwickAve;
+    font-family: SedgwickAve;
+    src: url(./fonts/SedgwickAve-Regular.ttf);
+}
+
+@font-face {
+    font-face-name: SedgwickAveDisplay;
+    font-family: SedgwickAveDisplay;
+    src: url(./fonts/SedgwickAveDisplay-Regular.ttf);
+}
+
+h1 {
+    font-family: PermanentMarker;
+    text-align: center;
+    font-size: 100px;
+}
+
+h3 {
+    font-family: SedgwickAve;
+    text-align: center;
+    font-size: 45px;
+}
+
+nav {
+    border: red solid 1px;
+
+    text-align: center;
+    width: 100%;;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50px;
+    grid-template-areas: ". navHome navThoughts navAlbums navOther .";
+}
+
+nav a {
+    background-color: blanchedalmond;
+    font-size: 30px;
+    text-decoration: none;
+    color: green;
+    padding-top: 5px;
+}
+
+.indexContent {
+    border: maroon solid 1px;
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;*/
+    /*align-content: center;*/
+    flex: 1;
+    text-align: center;
+    font-size: 20px;
+}
+
+footer {
+    position: relative;
+    bottom: 5px;
+    width: 100vw;
+    text-align: center;
+}
