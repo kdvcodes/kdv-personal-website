@@ -8,6 +8,19 @@
 <link rel="stylesheet"
       type="text/css"
       href="styles/styles.css">
+
 <link rel="icon"
       type="image/png"
       href="images/favicon.png">
+
+<link rel="stylesheet"
+      type="text/css"
+      href="js/jquery-ui-1.12.1/jquery-ui.css">
+
+<script rel="script"
+        type="application/javascript"
+        src="js/jquery-3.5.1.min.js"></script>
+
+<script rel="script"
+        type="application/javascript"
+        src="js/jquery-ui-1.12.1/jquery-ui.js"></script>

@@ -33,49 +33,90 @@
     src: url(./fonts/SedgwickAveDisplay-Regular.ttf);
 }
 
+@font-face {
+    font-face-name: ReenieBeanieRegular;
+    font-family: ReenieBeanieRegular;
+    src: url(./fonts/ReenieBeanie-Regular.ttf);
+}
+
+body {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    background-color: #21252b;
+    color: #77828b;
+    margin: 0;
+    padding: 0;
+}
+
 h1 {
+    /*border: solid red 1px;*/
     font-family: PermanentMarker;
     text-align: center;
     font-size: 100px;
+    margin-top: 0;
+    margin-bottom: inherit;
 }
 
 h3 {
+    /*border: solid yellow 1px;*/
     font-family: SedgwickAve;
     text-align: center;
-    font-size: 45px;
+    font-size: 40px;
+    margin-top: 0px;
+    margin-bottom: 40px;
 }
 
 nav {
-    border: red solid 1px;
-
     text-align: center;
     width: 100%;;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 50px;
+    grid-template-columns: 1fr 150px 150px 150px 150px 1fr;
+    grid-template-rows: 80px;
     grid-template-areas: ". navHome navThoughts navAlbums navOther .";
 }
 
 nav a {
-    background-color: blanchedalmond;
+    display: inherit;
     font-size: 30px;
     text-decoration: none;
-    color: green;
+    color: #77828b;
     padding-top: 5px;
+    justify-content: center;
+    align-content: center;
+}
+
+nav a:hover {
+    background-color: #77828b;
+    color: #21252b;
+    border-radius: 5px;
+}
+
+nav a:focus {
+    background-color: yellow;
+}
+
+nav a img {
+    width: 50px;
+    height: 50px;
 }
 
 .indexContent {
-    border: maroon solid 1px;
-
+    font-family: ReenieBeanieRegular;
     margin-top: 5px;
     margin-bottom: 5px;
     display: flex;
     flex-direction: column;
-    /*justify-content: center;*/
-    /*align-content: center;*/
+    justify-content: center;
+    align-content: center;
     flex: 1;
     text-align: center;
-    font-size: 20px;
+    font-size: 45px;
+    color: #b2b4b5;
+}
+
+.indexContent p {
+    display: none;
 }
 
 footer {
@@ -83,4 +124,10 @@ footer {
     bottom: 5px;
     width: 100vw;
     text-align: center;
+    font-family: Serif;
+}
+
+footer a {
+    text-decoration: none;
+    color: inherit;
 }
