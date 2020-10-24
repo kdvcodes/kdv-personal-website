@@ -92,8 +92,8 @@ nav a:hover {
     border-radius: 5px;
 }
 
-nav a:focus {
-    background-color: yellow;
+nav a:active {
+    background-color: #979da2;
 }
 
 nav a img {
@@ -101,7 +101,7 @@ nav a img {
     height: 50px;
 }
 
-.indexContent {
+main {
     font-family: ReenieBeanieRegular;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -115,7 +115,7 @@ nav a img {
     color: #b2b4b5;
 }
 
-.indexContent p {
+main .indexContent {
     display: none;
 }
 
