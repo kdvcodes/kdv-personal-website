@@ -54,7 +54,7 @@ h1 {
     /*border: solid red 1px;*/
     font-family: PermanentMarker;
     text-align: center;
-    font-size: 100px;
+    font-size: 7rem;
     margin-top: 0;
     margin-bottom: inherit;
 }
@@ -63,9 +63,14 @@ h3 {
     /*border: solid yellow 1px;*/
     font-family: SedgwickAve;
     text-align: center;
-    font-size: 40px;
+    font-size: 2.5rem;
     margin-top: 0px;
     margin-bottom: 40px;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
 }
 
 nav {
@@ -78,6 +83,7 @@ nav {
 }
 
 nav a {
+    /*border: red solid 1px;*/
     display: inherit;
     font-size: 30px;
     text-decoration: none;
@@ -98,8 +104,8 @@ nav a:active {
 }
 
 nav a img {
-    width: 50px;
-    height: 50px;
+    width: 3.5rem;
+    height: 3.5rem;
 }
 
 main {
@@ -112,7 +118,7 @@ main {
     align-content: center;
     flex: 1;
     text-align: center;
-    font-size: 45px;
+    font-size: 2rem;
     color: #b2b4b5;
 }
 

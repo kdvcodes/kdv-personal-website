@@ -15,12 +15,7 @@
     <header>
         <h1>Kevin Duy Vo</h1>
         <h3>Personal website of a tech geek :)</h3>
-        <nav>
-            <a class="navHome" href="index.jsp"><img src="images/home.svg"></a>
-            <a class="navThoughts" href="thoughts.jsp"><img src="images/comments.svg"></a>
-            <a class="navAlbums" href="albums.jsp"><img src="images/camera-retro.svg"></a>
-            <a class="navOther" href="projects.jsp"><img src="images/magic-wand.svg"></a>
-        </nav>
+        <jsp:include page="misc/nav.jsp"></jsp:include>
     </header>
 
     <main>
