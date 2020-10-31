@@ -9,8 +9,22 @@
 <html>
 <head>
     <title>Title</title>
+    <jsp:include page="misc/head.jsp"></jsp:include>
 </head>
 <body>
+<header>
+    <h1>Kevin Duy Vo</h1>
+    <h3>Personal website of a tech geek :)</h3>
+    <jsp:include page="misc/nav.jsp"></jsp:include>
+</header>
 
+<main>
+
+    <%-- MAIN CONTENTS GO HERE --%>
+
+</main>
+
+<%-- This is the footer of the page --%>
+<jsp:include page="misc/footer.jsp"></jsp:include>
 </body>
 </html>
