@@ -10,5 +10,5 @@
 <footer>
     <p>&copy; Copyright <%= (Calendar.getInstance()).get(Calendar.YEAR) %> Kevin Vo</p>
     <p>Contact: <a href="mailto:kdvcodes@gmail.com">kdvcodes@gmail.com</a></p>
-    <p>Admin Login</p>
+    <p><a href="login.jsp">Admin Login</a></p>
 </footer>

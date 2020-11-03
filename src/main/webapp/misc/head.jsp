@@ -24,3 +24,7 @@
 <script rel="script"
         type="application/javascript"
         src="js/jquery-ui-1.12.1/jquery-ui.js"></script>
+
+<script rel="script"
+        type="text/javascript"
+        src="js/jquery-validation-1.19.2/dist/jquery.validate.min.js"></script>
