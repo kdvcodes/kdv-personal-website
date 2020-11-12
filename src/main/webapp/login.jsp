@@ -22,7 +22,6 @@
 
         <%-- MAIN CONTENTS GO HERE --%>
         <div id="loginError">
-            <p></p>
         </div>
 
         <form id="loginForm" method="get" action="Login">

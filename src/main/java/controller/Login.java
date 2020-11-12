@@ -6,6 +6,10 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.sql.Connection;
+import java.sql.SQLException;
+
+import model.DatabaseConnection;
 
 @WebServlet(name = "Login")
 public class Login extends HttpServlet {
@@ -17,8 +21,15 @@ public class Login extends HttpServlet {
         String userName = request.getParameter("userName");
         String password = request.getParameter("password");
 
-        System.out.println("username: " + userName);
-        System.out.println("password: " + password);
+        try {
+            Connection connection = DatabaseConnection.initializeDatabase();
+            
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+
 
 //        request.getRequestDispatcher("login.jsp").forward(request, response);
     } // doGet method
